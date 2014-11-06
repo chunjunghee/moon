@@ -26,7 +26,7 @@ function draw()
 
    fill(255,206,0);
    ellipse(400 + Math.cos(timing*2*PI)*200+ Math.cos(timing2*2*PI)*70,           // x좌표
-        400 + Math.sin(timing*2*PI)*200+ Math.sin(timing2*2*PI)*70, // y좌표
+        400 + Math.sin(timing*2*PI)*200+ Math.(timing2*2*PI)*70, // y좌표
         30,                                  // width
         30);   
                                       // height
@@ -38,29 +38,5 @@ function draw()
    ellipse(400 + Math.cos(timing*2*PI)*300+ Math.cos(timing*2*PI)*70,           // x좌표
         400 + Math.sin(timing*2*PI)*300+ Math.cos(timing*2*PI)*70, // y좌표
         60,                                  // width
-        60);   
-
-	var bg;
-	var y = 0;
-
-	function setup() {
-	  // The background image must be the same size as the parameters
-	  // into the size() method. In this program, the size of the image
-	  // is 710x400 pixels.
-	  bg = loadImage("galaxy.jpg");
-	  createCanvas(720, 400);
-	}
-
-	function draw() {
-	  background(bg);
-	  
-	  stroke(226, 204, 0);
-	  line(0, y, width, y);
-	  
-	  y++;
-	  if (y > height) {
-	    y = 0; 
-	  }                         
+        60);                                  
 }
-
-
