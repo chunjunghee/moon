@@ -8,8 +8,7 @@ function draw()
 {
    background(bg);
    noStroke();
-   fill(249,42,8);
-   ellipse(400,400,150,150);
+
 
 //earth
    var duration = 3000;
