@@ -1,7 +1,10 @@
+var img;
+
 function setup() 
 {
    createCanvas(800,800);
    bg = loadImage("galaxy.jpg");
+   img = loadImage("earth.png");
 }
 
 function draw() 
@@ -15,7 +18,7 @@ function draw()
    var timing = (new Date()%duration)/duration;
 
    fill(27,105,109);
-   ellipse(400 + Math.cos(timing*2*PI)*200,           // x좌표
+   image(img,400 + Math.cos(timing*2*PI)*200,           // x좌표
         400 + Math.sin(timing*2*PI)*200, // y좌표
         100,                                  // width
         100);            
