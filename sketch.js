@@ -18,8 +18,8 @@ function draw()
    var timing = (new Date()%duration)/duration;
 
    fill(27,105,109);
-   image(img,400 + Math.cos(timing*2*PI)*200,           // x좌표
-        400 + Math.sin(timing*2*PI)*200, // y좌표
+   image(img, 400-img.width/2 + Math.cos(timing*2*PI)*200,           // x좌표
+        400-img.height/2 + Math.sin(timing*2*PI)*200, // y좌표
         100,                                  // width
         100);            
 
@@ -28,8 +28,8 @@ function draw()
    var timing2 = (new Date()%duration)/duration;
 
    fill(255,206,0);
-   ellipse(400 + Math.cos(timing*2*PI)*200+ Math.cos(timing2*2*PI)*70,           // x좌표
-        400 + Math.sin(timing*2*PI)*200+ Math.sin(timing2*2*PI)*70, // y좌표
+   ellipse(400 + Math.cos(timing*2*PI)*200+ Math.cos(timing2*2*PI)*100,           // x좌표
+        400 + Math.sin(timing*2*PI)*200+ Math.sin(timing2*2*PI)*100, // y좌표
         30,                                  // width
         30);   
                                       // height
