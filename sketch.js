@@ -6,7 +6,7 @@ function setup()
    createCanvas(800,800);
    bg = loadImage("galaxy.jpg");
    img = loadImage("earth.png");
-   im2 = loadImage("moon.png");
+   img2 = loadImage("moon.png");
 }
 
 function draw() 
@@ -30,7 +30,7 @@ function draw()
    var timing2 = (new Date()%duration)/duration;
 
    fill(255,206,0);
-   image(moon, 400-img2.width/2 + Math.cos(timing*2*PI)*200+ Math.cos(timing2*2*PI)*100,           // x좌표
+   image(img2, 400-img2.width/2 + Math.cos(timing*2*PI)*200+ Math.cos(timing2*2*PI)*100,           // x좌표
         400-img2.height/2 + Math.sin(timing*2*PI)*200+ Math.sin(timing2*2*PI)*100, // y좌표
         30,                                  // width
         30);   
